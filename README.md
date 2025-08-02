@@ -4,7 +4,7 @@
 Estimate contextual delays (the ones you can't control) for research tasks using multiple parameters.
 For usage, type 
 
-`/delay-estimator help`
+`/delay-estimator`
 
 from within the Brannigan Lab slack site.
 
