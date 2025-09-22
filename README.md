@@ -2,11 +2,30 @@
 ---
 ##### delay-estimator
 Estimate contextual delays (the ones you can't control) for research tasks using multiple parameters.
-For usage, type 
+
+To see usage from within slack, enter 
 
 `/delay-estimator`
 
-from within the Brannigan Lab slack site.
+from within the slack site where it is installed, or see below: 
+
+
+`/delay-estimator best_case_weeks=2 fraction_RD=0.8 hpc_factor=1 num_coauthors=1 stress_level=1`
+
+Parameters:
+
+ ```
+- best_case_weeks: Minimum possible time required, in weeks (e.g. 2)
+- fraction_RD: Fraction of task that is R&D (0 to 1)
+- hpc_factor: 0 = no HPC, 1 = average reliability, >1 = worse than average
+- num_coauthors: Number of coauthors who must weigh in (excluding PI)
+- stress_level: 0.5 = rested, 1 = typical, >1 = depleted
+``` 
+
+Typical output: 
+
+<img width="655" height="158" alt="image" src="https://github.com/user-attachments/assets/bd6b025b-af43-4023-9858-5cba68fa37cc" />
+
 
  ---
 # How to Build your own Slackbot with Python + Flask
